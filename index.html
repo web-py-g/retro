@@ -17,6 +17,7 @@
     <title>РЕТРОТЕПЛОХОД.РФ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="wrapper">
@@ -44,6 +45,42 @@
           представляют собой уникальную возможность насладиться красотой города
           под вечерними лучами солнца и огнями ночного света.
         </h4>
+        <form onsubmit="return false;" class="home_form">
+          <label class="label_name">
+            <input type="text" name="trip_name" />
+            <div class="name_list">
+              <div class="name_list__item">
+                <h3>Саксофон</h3>
+              </div>
+              <div class="name_list__item">
+                <h3>Ретровечеринка</h3>
+              </div>
+              <div class="name_list__item">
+                <h3>Развод мостов</h3>
+              </div>
+            </div>
+          </label>
+          <label class="label_date">
+            <input
+              type="date"
+              name="trip_date"
+              value="2023-09-01"
+              min="2023-09-01"
+            />
+          </label>
+          <!--
+            Начало Саксофон 20-00
+            Ретровечеринка 19-30
+            Развод мостов 23-00
+          -->
+          <label class="label_count">
+            <input type="text" name="count" />
+          </label>
+          <button class="btn">
+            <img src="./img/phone.svg" alt="" />
+            Забронировать
+          </button>
+        </form>
       </div>
     </div>
   </body>

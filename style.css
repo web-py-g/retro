@@ -142,7 +142,7 @@ legend {
   display: flex;
   column-gap: 40px;
 }
-.header_call span{
+.header_call span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +151,7 @@ legend {
   border: 1px solid rgb(95, 13, 82);
   padding: 15px 20px;
   background: #fff;
-  border-radius: 30px;
+  border-radius: 32px;
   font-weight: bold;
 }
 
@@ -182,24 +182,95 @@ legend {
   top: 50%;
   transform: translateY(-50%);
 }
-.home_name{
+.home_name {
   font-weight: bold;
   color: #fff;
   font-size: 20px;
   line-height: 30px;
 }
-.home_tag{
+.home_tag {
   font-weight: bold;
   color: #fff;
   font-size: 84px;
   line-height: 74px;
   max-width: 610px;
 }
-.home_desc{
-  font-family: 'Montserrat', sans-serif;
+.home_desc {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #fff;
   font-size: 16px;
   line-height: 30px;
   max-width: 610px;
+}
+
+.home_form {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 880px;
+  row-gap: 16px;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+.home_form > label > input {
+  padding: 10px 15px;
+  border: 1px solid rgb(45, 49, 52);
+  border-radius: 4px;
+  line-height: 24px;
+  color: rgb(45, 49, 52);
+  width: 100%;
+}
+.home_form > label {
+  position: relative;
+  width: 30%;
+}
+.home_form > label::before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: -50%;
+  left: 10px;
+  display: inline-block;
+  padding: 0 5px;
+  transform: translateY(50%);
+}
+.home_form .label_name::before {
+  content: "Поездка";
+}
+.home_form .label_date::before {
+  content: "Дата";
+}
+.home_form .label_count::before {
+  content: "Кол-во пассажиров";
+}
+.btn {
+  justify-self: end;
+  color: #fff;
+  background: rgb(95, 13, 82);
+  border-radius: 4px;
+  padding: 10px 15px;
+  line-height: 28px;
+  margin-left: auto;
+}
+.name_list{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  border: 1px solid rgb(45, 49, 52);
+  width: 100%;
+}
+.name_list__item{
+  padding: 10px 0;
+  padding-left: 5px;
+}
+.name_list__item:hover{
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
 }
