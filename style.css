@@ -159,6 +159,7 @@ legend {
   height: 100vh;
   background: #000;
   position: relative;
+  margin-bottom: 150px;
 }
 .home_bg {
   position: absolute;
@@ -247,15 +248,17 @@ legend {
   content: "Кол-во пассажиров";
 }
 .btn {
-  justify-self: end;
+  display: flex;
+  align-items: center;
   color: #fff;
   background: rgb(95, 13, 82);
   border-radius: 4px;
   padding: 10px 15px;
   line-height: 28px;
   margin-left: auto;
+  column-gap: 5px;
 }
-.name_list{
+.name_list {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -266,11 +269,133 @@ legend {
   border: 1px solid rgb(45, 49, 52);
   width: 100%;
 }
-.name_list__item{
+.name_list__item {
   padding: 10px 0;
   padding-left: 5px;
 }
-.name_list__item:hover{
+.name_list__item:hover {
   cursor: pointer;
   background-color: rgb(233, 233, 233);
+}
+
+body {
+  background: rgb(45, 49, 52) url(./img/Rectangle.svg);
+  background-attachment: fixed;
+  background-size: auto;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.trips_gallery {
+  margin-bottom: 100px;
+  position: relative;
+}
+.decore_1 {
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.trips_gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trips_cards {
+  display: flex;
+  column-gap: 24px;
+}
+.trips_card {
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  color: rgb(95, 13, 82);
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.trips_card h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+.about {
+  color: #fff;
+  margin-bottom: 100px;
+}
+.about .wrapper {
+  display: flex;
+  column-gap: 50px;
+}
+.about_info {
+  width: auto;
+  flex-shrink: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.about_img {
+  display: flex;
+  width: 50%;
+  flex-grow: 2;
+  border-radius: 24px;
+  align-items: center;
+}
+
+.about_images {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+.about_images img {
+  width: 30%;
+  max-width: 200px;
+}
+
+.trips{
+  margin-bottom: 150px;
+}
+.trips .trips_cards{
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.trips .trips_card{
+  width: 25%;
+  text-align: left;
+  align-items: start;
+  row-gap: 14px;
+}
+.trips_card h5{
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.trips_card p{
+  font-size: 16px;
+}
+.trips_card span{
+  color: rgba(91, 95, 98, 1);
+}
+.card_btn{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  color: rgb(95, 13, 82);
+  border: 1px solid rgb(95, 13, 82);
+  border-radius: 40px;
+  cursor: pointer;
 }
