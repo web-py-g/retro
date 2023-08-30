@@ -205,7 +205,7 @@ legend {
   max-width: 610px;
 }
 
-.home_form {
+.form {
   display: flex;
   background: #fff;
   flex-wrap: wrap;
@@ -216,7 +216,7 @@ legend {
   column-gap: 24px;
   justify-content: space-between;
 }
-.home_form > label > input {
+.form > label > input {
   padding: 10px 15px;
   border: 1px solid rgb(45, 49, 52);
   border-radius: 4px;
@@ -224,11 +224,11 @@ legend {
   color: rgb(45, 49, 52);
   width: 100%;
 }
-.home_form > label {
+.form > label {
   position: relative;
   width: 30%;
 }
-.home_form > label::before {
+.form > label::before {
   content: "";
   background: #fff;
   position: absolute;
@@ -238,13 +238,13 @@ legend {
   padding: 0 5px;
   transform: translateY(50%);
 }
-.home_form .label_name::before {
+.form .label_name::before {
   content: "Поездка";
 }
-.home_form .label_date::before {
+.form .label_date::before {
   content: "Дата";
 }
-.home_form .label_count::before {
+.form .label_count::before {
   content: "Кол-во пассажиров";
 }
 .btn {
@@ -255,7 +255,6 @@ legend {
   border-radius: 4px;
   padding: 10px 15px;
   line-height: 28px;
-  margin-left: auto;
   column-gap: 5px;
 }
 .name_list {
@@ -398,4 +397,78 @@ h2 {
   border: 1px solid rgb(95, 13, 82);
   border-radius: 40px;
   cursor: pointer;
+}
+
+.ticket{
+  position: relative;
+  background-image: url(./img/ticket.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  backdrop-filter: blur(15px);
+  padding: 250px 0;
+  overflow-y: hidden;
+}
+.ticket_light{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 200%;
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+.form .btn{
+  margin-left: auto;
+}
+.ticket_form{
+  margin: 0 auto;
+}
+.ticket_form .btn{
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 24px 36px;
+  border-radius: 20px;
+}
+
+.faq{
+  margin-top: 90px;
+  text-align: center;
+}
+.quections{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.quections__item{
+  padding: 25px 50px;
+  background: #fff;
+  border-radius: 20px;
+  color: rgba(8, 6, 6, 1);
+  text-align: left;
+}
+.quections__title {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quections__answer{
+  font-size: 16px;
+  /* margin-top: 20px; */
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.arrow{
+  transition: 0.5s;
+}
+.quections__title:hover .arrow{
+  transform: scale(1,-1);
+}
+.quections__title:hover ~ .quections__answer{
+  height: auto;
+  margin-top: 20px;
 }
