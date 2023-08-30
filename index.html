@@ -48,7 +48,7 @@
         <form onsubmit="return false;" class="home_form form">
           <label class="label_name">
             <input type="text" name="trip_name" />
-            <div class="name_list">
+            <div id="name_list_1" class="name_list">
               <div class="name_list__item">
                 <h3>Саксофон</h3>
               </div>
@@ -74,7 +74,7 @@
             Развод мостов 23-00
           -->
           <label class="label_count">
-            <input type="text" name="count" />
+            <input type="number" name="count" />
           </label>
           <button class="btn">
             <img src="./img/send.svg" alt="" />
@@ -116,6 +116,7 @@
     </div>
     <div class="about" id="about">
       <div class="wrapper">
+        <img class="decore_2" src="./img/Decore.svg" alt="" />
         <div class="about_info">
           <h2>О НАС</h2>
           <p>
@@ -141,6 +142,7 @@
           </div>
         </div>
         <div class="about_img">
+          <img class="about_light" src="./img/light.png" alt="" />
           <img src="./img/about.png" alt="" />
         </div>
       </div>
@@ -191,7 +193,7 @@
         <form onsubmit="return false;" class="ticket_form form">
           <label class="label_name">
             <input type="text" name="trip_name" />
-            <!-- <div class="name_list">
+            <div id="name_list_2" class="name_list">
               <div class="name_list__item">
                 <h3>Саксофон</h3>
               </div>
@@ -201,7 +203,7 @@
               <div class="name_list__item">
                 <h3>Развод мостов</h3>
               </div>
-            </div> -->
+            </div>
           </label>
           <label class="label_date">
             <input
@@ -211,13 +213,8 @@
               min="2023-09-01"
             />
           </label>
-          <!--
-            Начало Саксофон 20-00
-            Ретровечеринка 19-30
-            Развод мостов 23-00
-          -->
           <label class="label_count">
-            <input type="text" name="count" />
+            <input type="number" name="count" />
           </label>
           <button class="btn">Купить билет</button>
         </form>
@@ -232,21 +229,30 @@
               На каком теплоходе мы поедем?
               <img src="./img/arrow.svg" class="arrow" alt="" />
             </h5>
-            <p class="quections__answer"></p>
+            <p class="quections__answer">
+              Мы работаем с теплоходной компанией "Северная Венеция". Поездки
+              проходят на теплоходах класса Фонтанка "Барселона" "Кассандра"
+              "Флоренция" "Британия" и других.
+            </p>
           </div>
           <div class="quections__item">
             <h5 class="quections__title">
               А если пойдёт дождь?
               <img src="./img/arrow.svg" class="arrow" alt="" />
             </h5>
-            <p class="quections__answer"></p>
+            <p class="quections__answer">
+              На теплоходе есть закрытая палуба со столиками. И открытая палуба
+              с диваном и стульями.
+            </p>
           </div>
           <div class="quections__item">
             <h5 class="quections__title">
               На теплоходе есть пледы?
               <img src="./img/arrow.svg" class="arrow" alt="" />
             </h5>
-            <p class="quections__answer"></p>
+            <p class="quections__answer">
+              Да, на теплоходе есть пледы и обогреватели!
+            </p>
           </div>
           <div class="quections__item">
             <h5 class="quections__title">
@@ -254,10 +260,8 @@
               <img src="./img/arrow.svg" class="arrow" alt="" />
             </h5>
             <p class="quections__answer">
-              На саксофон и вечернюю Дискотеку можно с детьми любого возраста.
-              Для детей до семи лет предусмотрены скидки. На ночную Дискотеку мы
-              не рекомендуем брать детей. Вы можете взять их с собой с билетом
-              по полной стоимости.
+              Да у всех есть место за столом. Номер вашего столика будет указан
+              в вашем билете.
             </p>
           </div>
           <div class="quections__item">
@@ -269,11 +273,17 @@
               На саксофон и вечернюю Дискотеку можно с детьми любого возраста.
               Для детей до семи лет предусмотрены скидки. На ночную Дискотеку мы
               не рекомендуем брать детей. Вы можете взять их с собой с билетом
-              по полной стоимости.
+              по полной стоимости.
             </p>
           </div>
         </div>
       </div>
     </div>
+    <div class="near_trip">
+      <div class="wrapper">
+
+      </div>
+    </div>
   </body>
+  <script src="./main.js"></script>
 </html>
