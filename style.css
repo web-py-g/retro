@@ -307,7 +307,7 @@ h2 {
 }
 .decore_2{
   position: absolute;
-  bottom: -1250px;
+  bottom: -1550px;
   right: -250px;
   transform: rotate(180deg);
   z-index: -1;
@@ -343,6 +343,7 @@ h2 {
 
 
 .about {
+  overflow: hidden;
   position: relative;
   color: #fff;
   margin-bottom: 100px;
@@ -368,8 +369,8 @@ h2 {
 }
 .about_light{
   max-width: 1000px;
-  width: 900px;
-  height: 250%;
+  width: 600px;
+  height: 145%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -503,4 +504,190 @@ h2 {
 }
 .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
   padding-bottom: 6%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header_logo{
+    font-size: 20px;
+  }
+  .header_nav{
+    column-gap: 30px;
+  }
+  .header_link{
+    font-size: 14px;
+  }
+  .header_call span{
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .header .wrapper{
+    column-gap: 10px;
+  }
+  .home_tag{
+    font-size: 64px;
+  }
+  .trips_card p{
+    font-size: 14px;
+  }
+  .card_btn{
+    font-size: 14px;
+  }
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+    padding-bottom: 6%;
+  }
+  .quections__title.open ~ .quections__answer{
+    padding-bottom: 3%;
+  }
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+    padding-bottom: 8%;
+  }
+  .home .wrapper{
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header_logo{
+    font-size: 14px;
+  }
+  .header_link{
+    font-size: 12px;
+  }
+  .header_call span{
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+  .home_tag{
+    font-size: 48px;
+  }
+  .home_name{
+    font-size: 16px;
+  }
+  .home_desc{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .trips_card h5{
+    font-size: 16px;
+  }
+  .trips_card p{
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .form > label::before{
+    font-size: 12px;
+    top: -30%;
+  }
+  .trips .trips_card{
+    width: 30%;
+  }
+  .card_btn{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .ticket_form .btn{
+    padding: 16px 24px;
+    font-size: 24px;
+  }
+  .quections__title{
+    font-size: 16px;
+  }
+  .quections__answer{
+    font-size: 14px;
+  }
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+    padding-bottom: 10%;
+  }
+  .quections__item .quections__title.open ~ .quections__answer{
+    padding-bottom: 8%;
+  }
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+    padding-bottom: 12%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ticket_form .btn{
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  .header_logo{
+    display: none;
+  }
+  .header_nav{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header_link{
+    font-size: 11px;
+  }
+  .header_call{
+    display: none;
+  }
+  .home_tag{
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .form > label{
+    width: 100%;
+  }
+  .trips_cards{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .trips_card{
+    width: 80%;
+  }
+  .about_img{
+    display: none;
+  }
+  .about_images{
+    column-gap: 16px;
+  }
+  .trips .trips_cards{
+    align-items: center;
+    justify-content: center;
+  }
+  .trips .trips_card{
+    width: 80%;
+  }
+  .quections__item{
+    padding: 16px 32px;
+  }
+  .quections__answer{
+    font-size: 12px;
+  }
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+    padding-bottom: 25%;
+  }
+  .quections__item .quections__title.open ~ .quections__answer{
+    padding-bottom: 20%;
+  }
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+    padding-bottom: 32%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header_nav{
+    column-gap: 15px;
+  }
+  .quections__title{
+    font-size: 15px;
+  }
+  .quections__answer{
+    font-size: 11px;
+  }
+  .quections__title.open ~ .quections__answer{
+    margin-top: 10px;
+  }
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+    padding-bottom: 50%;
+  }
+  .quections__item .quections__title.open ~ .quections__answer{
+    padding-bottom: 30%;
+  }
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+    padding-bottom: 60%;
+  }
 }
