@@ -111,6 +111,9 @@ legend {
 * {
   font-family: "Inter", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   max-width: 85%;
   margin: 0 auto;
@@ -134,7 +137,7 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 .header_logo {
   font-size: 32px;
@@ -258,7 +261,7 @@ legend {
   line-height: 28px;
   column-gap: 5px;
 }
-.name_list.open{
+.name_list.open {
   display: flex;
 }
 .name_list {
@@ -271,6 +274,7 @@ legend {
   padding: 16px;
   border: 1px solid rgb(45, 49, 52);
   width: 100%;
+  z-index: 2;
 }
 .name_list__item {
   padding: 10px 0;
@@ -305,10 +309,10 @@ h2 {
   transform: rotate(0deg);
   z-index: -1;
 }
-.decore_2{
+.decore_2 {
   position: absolute;
   bottom: -1550px;
-  right: -250px;
+  right: -0;
   transform: rotate(180deg);
   z-index: -1;
 }
@@ -341,7 +345,6 @@ h2 {
   font-size: 24px;
 }
 
-
 .about {
   overflow: hidden;
   position: relative;
@@ -367,14 +370,14 @@ h2 {
   align-items: center;
   position: relative;
 }
-.about_light{
+.about_light {
   max-width: 1000px;
   width: 600px;
   height: 145%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 .about_images {
@@ -387,30 +390,30 @@ h2 {
   max-width: 200px;
 }
 
-.trips{
+.trips {
   margin-bottom: 150px;
 }
-.trips .trips_cards{
+.trips .trips_cards {
   justify-content: space-between;
   margin-top: 40px;
 }
-.trips .trips_card{
+.trips .trips_card {
   width: 25%;
   text-align: left;
   align-items: start;
   row-gap: 14px;
 }
-.trips_card h5{
+.trips_card h5 {
   font-size: 18px;
   margin-bottom: 0;
 }
-.trips_card p{
+.trips_card p {
   font-size: 16px;
 }
-.trips_card span{
+.trips_card span {
   color: rgba(91, 95, 98, 1);
 }
-.card_btn{
+.card_btn {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -422,7 +425,7 @@ h2 {
   cursor: pointer;
 }
 
-.ticket{
+.ticket {
   position: relative;
   background-image: url(./img/ticket.png);
   background-repeat: no-repeat;
@@ -432,43 +435,43 @@ h2 {
   padding: 250px 0;
   overflow-y: hidden;
 }
-.ticket_light{
+.ticket_light {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 200%;
   backdrop-filter: brightness(60%);
   z-index: -1;
 }
-.form .btn{
+.form .btn {
   margin-left: auto;
 }
-.ticket_form{
+.ticket_form {
   margin: 0 auto;
 }
-.ticket_form .btn{
+.ticket_form .btn {
   margin: 0 auto;
-  font-size: 30px;
-  padding: 24px 36px;
+  font-size: 24px;
+  padding: 20px 30px;
   border-radius: 20px;
 }
 
-.faq{
+.faq {
   margin-top: 90px;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
 }
-.faq h2{
+.faq h2 {
   margin-bottom: 50px;
 }
-.quections{
+.quections {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.quections__item{
+.quections__item {
   padding: 25px 50px;
   background: #fff;
   border-radius: 20px;
@@ -476,284 +479,492 @@ h2 {
   text-align: left;
 }
 .quections__title {
+  cursor: pointer;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.quections__answer{
+.quections__answer {
   font-size: 16px;
   /* margin-top: 20px; */
   height: 0;
   overflow: hidden;
   transition: 0.5s;
 }
-.arrow{
+.arrow {
   transition: 0.5s;
 }
-.quections__title.open .arrow{
-  transform: scale(1,-1);
+.quections__title.open .arrow {
+  transform: scale(1, -1);
 }
-.quections__title.open ~ .quections__answer{
+.quections__title.open ~ .quections__answer {
   padding-bottom: 2%;
   margin-top: 20px;
 }
-.quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+.quections__item:nth-child(1) .quections__title.open ~ .quections__answer {
   padding-bottom: 5%;
 }
-.quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+.quections__item:nth-child(5) .quections__title.open ~ .quections__answer {
   padding-bottom: 6%;
 }
 
-.near_trips h2{
+.near_trips {
+  margin-bottom: 120px;
+}
+.near_trips h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-.near_trips__body{
+.near_trips__body {
   display: flex;
   column-gap: 30px;
 }
-.near_trips__photos{
+.near_trips__photos {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
   justify-content: space-between;
+  width: 35%;
 }
 .near_img {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
   object-fit: cover;
 }
-.near_trips__card{
-  width: 50%;
+.near_trips__card {
+  width: 23%;
   align-items: start;
 }
-.near_trips__card h5{
+.near_trips__card h5 {
   margin-bottom: 15px;
 }
-.near_trips__card  p{
+.near_trips__card p {
   margin-bottom: 15px;
   text-align: left;
 }
-.near_trips .card_btn{
+.near_trips .card_btn {
   margin-top: 15px;
 }
-.near_trips__block{
+.near_trips__block {
   background: #fff;
   border-radius: 24px;
   padding: 24px 32px;
   text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.near_trips__block h3{
+.near_trips__block h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
   color: rgb(95, 13, 82);
 }
-.near_trips__block p{
+.near_trips__block p {
   font-size: 14px;
 }
-.near_trips__right{
-  width: 50%;
+.near_trips__right {
+  width: 35%;
 }
-.near_trips__right .near_img{
-  width: 160px;
-  height: 160px;
-}
-.near_trips__right{
+.near_trips__right {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.near_trips_b{
+.near_trips_b {
   display: flex;
   justify-content: space-between;
 }
+.lastform {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.lastform_form {
+  row-gap: 40px;
+}
+.footer {
+  background: rgb(95, 13, 82);
+  color: #fff;
+  padding: 80px 0;
+  position: relative;
+}
+.footer_bottom {
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+}
+.footer a {
+  color: #fff;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_link {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+.footer_local {
+  font-size: 18px;
+}
+.footer__logo {
+  width: 25%;
+}
+.footer__logo h5 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer_menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 40%;
+}
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  justify-content: space-between;
+}
+.footer_data {
+  width: 25%;
+}
+.footer .btn-invert {
+  background-color: #fff;
+  color: rgb(95, 13, 82);
+  border-radius: 10px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+@media screen and (max-width: 1420px) {
+  .near_img {
+    width: 160px;
+    height: 160px;
+  }
+  .near_trips__block {
+    height: 160px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
-  .header_logo{
+  .near_img {
+    width: 135px;
+    height: 135px;
+  }
+  .near_trips__block {
+    height: 135px;
+  }
+  .near_trips_b {
+    margin-top: auto;
+  }
+  .near_trips__photos {
+    row-gap: 50px;
+  }
+  .near_trips__photos .near_img {
+    margin-top: auto;
+  }
+  .near_trips__card img {
+    width: 100%;
+    height: 120px;
+  }
+  .near_trips .card_btn {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .near_trips__card h5 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .near_trips .near_trips__card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .header_logo {
     font-size: 20px;
   }
-  .header_nav{
+  .header_nav {
     column-gap: 30px;
   }
-  .header_link{
+  .header_link {
     font-size: 14px;
   }
-  .header_call span{
+  .header_call span {
     padding: 10px 15px;
     font-size: 12px;
   }
-  .header .wrapper{
+  .header .wrapper {
     column-gap: 10px;
   }
-  .home_tag{
+  .home_tag {
     font-size: 64px;
   }
-  .trips_card p{
+  .trips_card p {
     font-size: 14px;
   }
-  .card_btn{
+  .card_btn {
     font-size: 14px;
   }
-  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer {
     padding-bottom: 6%;
   }
-  .quections__title.open ~ .quections__answer{
+  .quections__title.open ~ .quections__answer {
     padding-bottom: 3%;
   }
-  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer {
     padding-bottom: 8%;
   }
-  .home .wrapper{
+  .home .wrapper {
     row-gap: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header_logo{
+  .near_trips__body {
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .near_trips__card {
+    width: 45%;
+    order: 1;
+  }
+  .near_trips__photos {
+    width: 100%;
+    flex-wrap: nowrap;
+    order: 3;
+  }
+  .near_trips__right {
+    width: 45%;
+    order: 2;
+  }
+  .near_trips__card img {
+    object-fit: cover;
+  }
+  .near_trips__block {
+    height: 50%;
+  }
+  .footer__logo h5 {
+    font-size: 30px;
+  }
+  .footer__logo,
+  .footer_data {
+    width: 22%;
+  }
+  .footer_local {
     font-size: 14px;
   }
-  .header_link{
+  .footer_link {
+    font-size: 10px;
+  }
+  .footer_link img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer_bottom {
     font-size: 12px;
   }
-  .header_call span{
+  .footer .btn-invert {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .header_logo {
+    font-size: 14px;
+  }
+  .header_link {
+    font-size: 12px;
+  }
+  .header_call span {
     font-size: 10px;
     padding: 6px 12px;
   }
-  .home_tag{
+  .home_tag {
     font-size: 48px;
   }
-  .home_name{
+  .home_name {
     font-size: 16px;
   }
-  .home_desc{
+  .home_desc {
     font-size: 14px;
     line-height: 20px;
   }
-  .trips_card h5{
+  .trips_card h5 {
     font-size: 16px;
   }
-  .trips_card p{
+  .trips_card p {
     font-size: 12px;
     padding-top: 10px;
   }
-  .form > label::before{
+  .form > label::before {
     font-size: 12px;
     top: -30%;
   }
-  .trips .trips_card{
+  .trips .trips_card {
     width: 30%;
   }
-  .card_btn{
+  .card_btn {
     font-size: 12px;
     padding: 10px 20px;
   }
-  .ticket_form .btn{
+  .ticket_form .btn {
     padding: 16px 24px;
     font-size: 24px;
   }
-  .quections__title{
+  .quections__title {
     font-size: 16px;
   }
-  .quections__answer{
+  .quections__answer {
     font-size: 14px;
   }
-  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer {
     padding-bottom: 10%;
   }
-  .quections__item .quections__title.open ~ .quections__answer{
+  .quections__item .quections__title.open ~ .quections__answer {
     padding-bottom: 8%;
   }
-  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer {
     padding-bottom: 12%;
   }
 }
 @media screen and (max-width: 767px) {
-  .ticket_form .btn{
+  .near_trips__photos {
+    flex-wrap: wrap;
+    width: 80%;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+  .near_trips__body {
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .near_trips__right {
+    width: 80%;
+  }
+  .near_trips__photos .near_img {
+    margin-top: 0;
+  }
+  .footer_menu,
+  .footer_data {
+    width: 100%;
+  }
+  .footer .wrapper {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .footer_bottom {
+    font-size: 10px;
+  }
+
+  .ticket_form .btn {
     padding: 12px 24px;
     font-size: 16px;
   }
-  .header_logo{
+  .header_logo {
     display: none;
   }
-  .header_nav{
+  .header_nav {
     width: 100%;
     justify-content: space-between;
   }
-  .header_link{
+  .header_link {
     font-size: 11px;
   }
-  .header_call{
+  .header_call {
     display: none;
   }
-  .home_tag{
+  .header .wrapper {
+    margin: 10px auto;
+  }
+  .home_tag {
     font-size: 36px;
     line-height: 40px;
   }
-  .form > label{
+  .form > label {
     width: 100%;
   }
-  .trips_cards{
+  .trips_cards {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     row-gap: 30px;
   }
-  .trips_card{
+  .trips_card {
     width: 80%;
   }
-  .about_img{
+  .about_img {
     display: none;
   }
-  .about_images{
+  .about_images {
     column-gap: 16px;
   }
-  .trips .trips_cards{
+  .trips .trips_cards {
     align-items: center;
     justify-content: center;
   }
-  .trips .trips_card{
+  .trips .trips_card {
     width: 80%;
   }
-  .quections__item{
+  .quections__item {
     padding: 16px 32px;
   }
-  .quections__answer{
+  .quections__answer {
     font-size: 12px;
   }
-  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer {
     padding-bottom: 25%;
   }
-  .quections__item .quections__title.open ~ .quections__answer{
+  .quections__item .quections__title.open ~ .quections__answer {
     padding-bottom: 20%;
   }
-  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer {
     padding-bottom: 32%;
   }
 }
 @media screen and (max-width: 400px) {
-  .header_nav{
+  .header_nav {
     column-gap: 15px;
   }
-  .quections__title{
+  .quections__title {
     font-size: 15px;
   }
-  .quections__answer{
+  .quections__answer {
     font-size: 11px;
   }
-  .quections__title.open ~ .quections__answer{
+  .quections__title.open ~ .quections__answer {
     margin-top: 10px;
   }
-  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(1) .quections__title.open ~ .quections__answer {
     padding-bottom: 50%;
   }
-  .quections__item .quections__title.open ~ .quections__answer{
+  .quections__item .quections__title.open ~ .quections__answer {
     padding-bottom: 30%;
   }
-  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer{
+  .quections__item:nth-child(5) .quections__title.open ~ .quections__answer {
     padding-bottom: 60%;
+  }
+  .near_trips_b{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .near_img{
+    width: 100%;
+    height: 220px;
   }
 }

@@ -147,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="trips">
+    <div id="trips" class="trips">
       <div class="wrapper">
         <h2>Наши поездки</h2>
         <div class="trips_cards">
@@ -312,6 +312,82 @@
         </div>
       </div>
     </div>
+    <div class="lastform">
+      <div class="wrapper">
+        <form onsubmit="return false;" class="lastform_form ticket_form form">
+          <label class="label_name">
+            <input type="text" name="trip_name" />
+            <div id="name_list_3" class="name_list">
+              <div class="name_list__item">
+                <h3>Саксофон</h3>
+              </div>
+              <div class="name_list__item">
+                <h3>Ретровечеринка</h3>
+              </div>
+              <div class="name_list__item">
+                <h3>Развод мостов</h3>
+              </div>
+            </div>
+          </label>
+          <label class="label_date">
+            <input
+              type="date"
+              name="trip_date"
+              value="2023-09-01"
+              min="2023-09-01"
+            />
+          </label>
+          <label class="label_count">
+            <input type="number" name="count" />
+          </label>
+          <button class="btn">Купить билет</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer" id="contacts">
+      <div class="wrapper">
+        <h6 class="footer_bottom">
+          РЕТРОТЕПЛОХОД 2008-2023 г. | Сайт не является публичной офертой и
+          носит информационный характер.
+        </h6>
+        <div class="footer__logo">
+          <h5>
+            #ретро <br />
+            теплоход
+          </h5>
+        </div>
+        <div class="footer_menu">
+          <div class="footer_list">
+            <a href="#home" class="footer_local">Главная </a>
+            <a href="#about" class="footer_local"> О нас </a>
+            <a href="#trips" class="footer_local"> Наши поездки</a>
+          </div>
+          <div class="footer_list">
+            <a href="" class="footer_link"
+              ><img src="./img/loc_footer.svg" alt="" />Санкт-Петербург</a
+            >
+            <a href="" class="footer_link"
+              ><img src="./img/phone_footer.svg" alt="" />+7 (900) 000-00-00</a
+            >
+            <a href="" class="footer_link"
+              ><img src="./img/mail_footer.svg" alt="" />vk.com/0000</a
+            >
+            <a href="" class="footer_link"
+              ><img src="./img/vk_footer.svg" alt="" />Blablabla@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="footer_data">
+          <a
+            target="_blank"
+            href="./Реквизиты.pdf"
+            download
+            class="btn btn-invert"
+            >НАШИ РЕКВИЗИТЫ
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./main.js"></script>
 </html>
