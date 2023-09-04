@@ -199,6 +199,7 @@ html {
   font-size: 84px;
   line-height: 74px;
   max-width: 610px;
+  text-transform: uppercase;
 }
 .home_desc {
   font-family: "Montserrat", sans-serif;
@@ -333,16 +334,19 @@ h2 {
   color: rgb(95, 13, 82);
   padding: 24px 16px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+.trips_gallery .trips_card img{
+  height: 140px;
 }
 .trips_card h5 {
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .about {
@@ -403,7 +407,7 @@ h2 {
   align-items: start;
   row-gap: 14px;
 }
-.trips_card h5 {
+.trips .trips_card h5 {
   font-size: 18px;
   margin-bottom: 0;
 }
@@ -441,8 +445,8 @@ h2 {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 200%;
-  backdrop-filter: brightness(60%);
+  height: 120%;
+  backdrop-filter: brightness(80%);
   z-index: -1;
 }
 .form .btn {
@@ -522,11 +526,10 @@ h2 {
   column-gap: 30px;
 }
 .near_trips__photos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 20px;
-  justify-content: space-between;
   width: 35%;
 }
 .near_img {
@@ -573,13 +576,14 @@ h2 {
   width: 35%;
 }
 .near_trips__right {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 20px;
 }
 .near_trips_b {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 }
 .lastform {
   background: #fff;
