@@ -123,7 +123,7 @@ legend {
   right: 0;
   border-bottom: 1px solid #fff;
   z-index: 9;
-  background: rgba(0,0,0,0.5);
+  background: rgba(95, 13, 82, 0.53);
 }
 .header a {
   scroll-behavior: smooth;
@@ -506,6 +506,72 @@ h2 {
   padding-bottom: 6%;
 }
 
+.near_trips h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.near_trips__body{
+  display: flex;
+  column-gap: 30px;
+}
+.near_trips__photos{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: space-between;
+}
+.near_img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.near_trips__card{
+  width: 50%;
+  align-items: start;
+}
+.near_trips__card h5{
+  margin-bottom: 15px;
+}
+.near_trips__card  p{
+  margin-bottom: 15px;
+  text-align: left;
+}
+.near_trips .card_btn{
+  margin-top: 15px;
+}
+.near_trips__block{
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px 32px;
+  text-align: center;
+}
+.near_trips__block h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(95, 13, 82);
+}
+.near_trips__block p{
+  font-size: 14px;
+}
+.near_trips__right{
+  width: 50%;
+}
+.near_trips__right .near_img{
+  width: 160px;
+  height: 160px;
+}
+.near_trips__right{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.near_trips_b{
+  display: flex;
+  justify-content: space-between;
+}
 
 @media screen and (max-width: 1200px) {
   .header_logo{
